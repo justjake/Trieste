@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C151380228FA0E3F006AC127 /* TriesteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151380128FA0E3F006AC127 /* TriesteApp.swift */; };
+		C151380428FA0E3F006AC127 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151380328FA0E3F006AC127 /* ContentView.swift */; };
+		C151380628FA0E40006AC127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151380528FA0E40006AC127 /* Assets.xcassets */; };
+		C151380928FA0E40006AC127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151380828FA0E40006AC127 /* Preview Assets.xcassets */; };
+		C151381328FA0E40006AC127 /* TriesteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151381228FA0E40006AC127 /* TriesteTests.swift */; };
+		C151381D28FA0E40006AC127 /* TriesteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151381C28FA0E40006AC127 /* TriesteUITests.swift */; };
+		C151381F28FA0E40006AC127 /* TriesteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151381E28FA0E40006AC127 /* TriesteUITestsLaunchTests.swift */; };
+		C151382528FA0E40006AC127 /* Trieste Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C151382428FA0E40006AC127 /* Trieste Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C151382A28FA0E40006AC127 /* TriesteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151382928FA0E40006AC127 /* TriesteApp.swift */; };
+		C151382C28FA0E40006AC127 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151382B28FA0E40006AC127 /* ContentView.swift */; };
+		C151382E28FA0E41006AC127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151382D28FA0E41006AC127 /* Assets.xcassets */; };
+		C151383128FA0E41006AC127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C151383028FA0E41006AC127 /* Preview Assets.xcassets */; };
+		C151383B28FA0E41006AC127 /* Trieste_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151383A28FA0E41006AC127 /* Trieste_Watch_AppTests.swift */; };
+		C151384528FA0E41006AC127 /* Trieste_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151384428FA0E41006AC127 /* Trieste_Watch_AppUITests.swift */; };
+		C151384728FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151384628FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C151380F28FA0E40006AC127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15137F628FA0E3E006AC127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C15137FD28FA0E3F006AC127;
+			remoteInfo = Trieste;
+		};
+		C151381928FA0E40006AC127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15137F628FA0E3E006AC127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C15137FD28FA0E3F006AC127;
+			remoteInfo = Trieste;
+		};
+		C151382628FA0E40006AC127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15137F628FA0E3E006AC127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C151382328FA0E40006AC127;
+			remoteInfo = "Trieste Watch App";
+		};
+		C151383728FA0E41006AC127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15137F628FA0E3E006AC127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C151382328FA0E40006AC127;
+			remoteInfo = "Trieste Watch App";
+		};
+		C151384128FA0E41006AC127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15137F628FA0E3E006AC127 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C151382328FA0E40006AC127;
+			remoteInfo = "Trieste Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C151384D28FA0E41006AC127 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C151382528FA0E40006AC127 /* Trieste Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C15137FE28FA0E3F006AC127 /* Trieste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trieste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151380128FA0E3F006AC127 /* TriesteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriesteApp.swift; sourceTree = "<group>"; };
+		C151380328FA0E3F006AC127 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C151380528FA0E40006AC127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C151380828FA0E40006AC127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C151380E28FA0E40006AC127 /* TriesteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriesteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151381228FA0E40006AC127 /* TriesteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriesteTests.swift; sourceTree = "<group>"; };
+		C151381828FA0E40006AC127 /* TriesteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriesteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151381C28FA0E40006AC127 /* TriesteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriesteUITests.swift; sourceTree = "<group>"; };
+		C151381E28FA0E40006AC127 /* TriesteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriesteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C151382428FA0E40006AC127 /* Trieste Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trieste Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151382928FA0E40006AC127 /* TriesteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriesteApp.swift; sourceTree = "<group>"; };
+		C151382B28FA0E40006AC127 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C151382D28FA0E41006AC127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C151383028FA0E41006AC127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C151383628FA0E41006AC127 /* Trieste Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trieste Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151383A28FA0E41006AC127 /* Trieste_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trieste_Watch_AppTests.swift; sourceTree = "<group>"; };
+		C151384028FA0E41006AC127 /* Trieste Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trieste Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151384428FA0E41006AC127 /* Trieste_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trieste_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		C151384628FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trieste_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C15137FB28FA0E3F006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151380B28FA0E40006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151381528FA0E40006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151382128FA0E40006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383328FA0E41006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383D28FA0E41006AC127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C15137F528FA0E3E006AC127 = {
+			isa = PBXGroup;
+			children = (
+				C151380028FA0E3F006AC127 /* Trieste */,
+				C151381128FA0E40006AC127 /* TriesteTests */,
+				C151381B28FA0E40006AC127 /* TriesteUITests */,
+				C151382828FA0E40006AC127 /* Trieste Watch App */,
+				C151383928FA0E41006AC127 /* Trieste Watch AppTests */,
+				C151384328FA0E41006AC127 /* Trieste Watch AppUITests */,
+				C15137FF28FA0E3F006AC127 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C15137FF28FA0E3F006AC127 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15137FE28FA0E3F006AC127 /* Trieste.app */,
+				C151380E28FA0E40006AC127 /* TriesteTests.xctest */,
+				C151381828FA0E40006AC127 /* TriesteUITests.xctest */,
+				C151382428FA0E40006AC127 /* Trieste Watch App.app */,
+				C151383628FA0E41006AC127 /* Trieste Watch AppTests.xctest */,
+				C151384028FA0E41006AC127 /* Trieste Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C151380028FA0E3F006AC127 /* Trieste */ = {
+			isa = PBXGroup;
+			children = (
+				C151380128FA0E3F006AC127 /* TriesteApp.swift */,
+				C151380328FA0E3F006AC127 /* ContentView.swift */,
+				C151380528FA0E40006AC127 /* Assets.xcassets */,
+				C151380728FA0E40006AC127 /* Preview Content */,
+			);
+			path = Trieste;
+			sourceTree = "<group>";
+		};
+		C151380728FA0E40006AC127 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C151380828FA0E40006AC127 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C151381128FA0E40006AC127 /* TriesteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C151381228FA0E40006AC127 /* TriesteTests.swift */,
+			);
+			path = TriesteTests;
+			sourceTree = "<group>";
+		};
+		C151381B28FA0E40006AC127 /* TriesteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C151381C28FA0E40006AC127 /* TriesteUITests.swift */,
+				C151381E28FA0E40006AC127 /* TriesteUITestsLaunchTests.swift */,
+			);
+			path = TriesteUITests;
+			sourceTree = "<group>";
+		};
+		C151382828FA0E40006AC127 /* Trieste Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C151382928FA0E40006AC127 /* TriesteApp.swift */,
+				C151382B28FA0E40006AC127 /* ContentView.swift */,
+				C151382D28FA0E41006AC127 /* Assets.xcassets */,
+				C151382F28FA0E41006AC127 /* Preview Content */,
+			);
+			path = "Trieste Watch App";
+			sourceTree = "<group>";
+		};
+		C151382F28FA0E41006AC127 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C151383028FA0E41006AC127 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C151383928FA0E41006AC127 /* Trieste Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C151383A28FA0E41006AC127 /* Trieste_Watch_AppTests.swift */,
+			);
+			path = "Trieste Watch AppTests";
+			sourceTree = "<group>";
+		};
+		C151384328FA0E41006AC127 /* Trieste Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C151384428FA0E41006AC127 /* Trieste_Watch_AppUITests.swift */,
+				C151384628FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Trieste Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C15137FD28FA0E3F006AC127 /* Trieste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151384E28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste" */;
+			buildPhases = (
+				C15137FA28FA0E3F006AC127 /* Sources */,
+				C15137FB28FA0E3F006AC127 /* Frameworks */,
+				C15137FC28FA0E3F006AC127 /* Resources */,
+				C151384D28FA0E41006AC127 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151382728FA0E40006AC127 /* PBXTargetDependency */,
+			);
+			name = Trieste;
+			productName = Trieste;
+			productReference = C15137FE28FA0E3F006AC127 /* Trieste.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C151380D28FA0E40006AC127 /* TriesteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151385128FA0E41006AC127 /* Build configuration list for PBXNativeTarget "TriesteTests" */;
+			buildPhases = (
+				C151380A28FA0E40006AC127 /* Sources */,
+				C151380B28FA0E40006AC127 /* Frameworks */,
+				C151380C28FA0E40006AC127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151381028FA0E40006AC127 /* PBXTargetDependency */,
+			);
+			name = TriesteTests;
+			productName = TriesteTests;
+			productReference = C151380E28FA0E40006AC127 /* TriesteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C151381728FA0E40006AC127 /* TriesteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151385428FA0E41006AC127 /* Build configuration list for PBXNativeTarget "TriesteUITests" */;
+			buildPhases = (
+				C151381428FA0E40006AC127 /* Sources */,
+				C151381528FA0E40006AC127 /* Frameworks */,
+				C151381628FA0E40006AC127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151381A28FA0E40006AC127 /* PBXTargetDependency */,
+			);
+			name = TriesteUITests;
+			productName = TriesteUITests;
+			productReference = C151381828FA0E40006AC127 /* TriesteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C151382328FA0E40006AC127 /* Trieste Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151384A28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch App" */;
+			buildPhases = (
+				C151382028FA0E40006AC127 /* Sources */,
+				C151382128FA0E40006AC127 /* Frameworks */,
+				C151382228FA0E40006AC127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trieste Watch App";
+			productName = "Trieste Watch App";
+			productReference = C151382428FA0E40006AC127 /* Trieste Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C151383528FA0E41006AC127 /* Trieste Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151385728FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch AppTests" */;
+			buildPhases = (
+				C151383228FA0E41006AC127 /* Sources */,
+				C151383328FA0E41006AC127 /* Frameworks */,
+				C151383428FA0E41006AC127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151383828FA0E41006AC127 /* PBXTargetDependency */,
+			);
+			name = "Trieste Watch AppTests";
+			productName = "Trieste Watch AppTests";
+			productReference = C151383628FA0E41006AC127 /* Trieste Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C151383F28FA0E41006AC127 /* Trieste Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C151385A28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch AppUITests" */;
+			buildPhases = (
+				C151383C28FA0E41006AC127 /* Sources */,
+				C151383D28FA0E41006AC127 /* Frameworks */,
+				C151383E28FA0E41006AC127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C151384228FA0E41006AC127 /* PBXTargetDependency */,
+			);
+			name = "Trieste Watch AppUITests";
+			productName = "Trieste Watch AppUITests";
+			productReference = C151384028FA0E41006AC127 /* Trieste Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C15137F628FA0E3E006AC127 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C15137FD28FA0E3F006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					C151380D28FA0E40006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = C15137FD28FA0E3F006AC127;
+					};
+					C151381728FA0E40006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = C15137FD28FA0E3F006AC127;
+					};
+					C151382328FA0E40006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					C151383528FA0E41006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = C151382328FA0E40006AC127;
+					};
+					C151383F28FA0E41006AC127 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = C151382328FA0E40006AC127;
+					};
+				};
+			};
+			buildConfigurationList = C15137F928FA0E3E006AC127 /* Build configuration list for PBXProject "Trieste" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C15137F528FA0E3E006AC127;
+			productRefGroup = C15137FF28FA0E3F006AC127 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C15137FD28FA0E3F006AC127 /* Trieste */,
+				C151380D28FA0E40006AC127 /* TriesteTests */,
+				C151381728FA0E40006AC127 /* TriesteUITests */,
+				C151382328FA0E40006AC127 /* Trieste Watch App */,
+				C151383528FA0E41006AC127 /* Trieste Watch AppTests */,
+				C151383F28FA0E41006AC127 /* Trieste Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C15137FC28FA0E3F006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151380928FA0E40006AC127 /* Preview Assets.xcassets in Resources */,
+				C151380628FA0E40006AC127 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151380C28FA0E40006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151381628FA0E40006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151382228FA0E40006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151383128FA0E41006AC127 /* Preview Assets.xcassets in Resources */,
+				C151382E28FA0E41006AC127 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383428FA0E41006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383E28FA0E41006AC127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C15137FA28FA0E3F006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151380428FA0E3F006AC127 /* ContentView.swift in Sources */,
+				C151380228FA0E3F006AC127 /* TriesteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151380A28FA0E40006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151381328FA0E40006AC127 /* TriesteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151381428FA0E40006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151381D28FA0E40006AC127 /* TriesteUITests.swift in Sources */,
+				C151381F28FA0E40006AC127 /* TriesteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151382028FA0E40006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151382C28FA0E40006AC127 /* ContentView.swift in Sources */,
+				C151382A28FA0E40006AC127 /* TriesteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383228FA0E41006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151383B28FA0E41006AC127 /* Trieste_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151383C28FA0E41006AC127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151384528FA0E41006AC127 /* Trieste_Watch_AppUITests.swift in Sources */,
+				C151384728FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C151381028FA0E40006AC127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C15137FD28FA0E3F006AC127 /* Trieste */;
+			targetProxy = C151380F28FA0E40006AC127 /* PBXContainerItemProxy */;
+		};
+		C151381A28FA0E40006AC127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C15137FD28FA0E3F006AC127 /* Trieste */;
+			targetProxy = C151381928FA0E40006AC127 /* PBXContainerItemProxy */;
+		};
+		C151382728FA0E40006AC127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C151382328FA0E40006AC127 /* Trieste Watch App */;
+			targetProxy = C151382628FA0E40006AC127 /* PBXContainerItemProxy */;
+		};
+		C151383828FA0E41006AC127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C151382328FA0E40006AC127 /* Trieste Watch App */;
+			targetProxy = C151383728FA0E41006AC127 /* PBXContainerItemProxy */;
+		};
+		C151384228FA0E41006AC127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C151382328FA0E40006AC127 /* Trieste Watch App */;
+			targetProxy = C151384128FA0E41006AC127 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C151384828FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C151384928FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C151384B28FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trieste Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.Trieste.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C151384C28FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trieste Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.Trieste.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		C151384F28FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trieste/Preview Content\"";
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.Trieste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C151385028FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trieste/Preview Content\"";
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.Trieste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C151385228FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.TriesteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trieste.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trieste";
+			};
+			name = Debug;
+		};
+		C151385328FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.TriesteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trieste.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trieste";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C151385528FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.TriesteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trieste;
+			};
+			name = Debug;
+		};
+		C151385628FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tl.jake.TriesteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trieste;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C151385828FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tl.jake.Trieste-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trieste Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trieste Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C151385928FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tl.jake.Trieste-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trieste Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trieste Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		C151385B28FA0E41006AC127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tl.jake.Trieste-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Trieste Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C151385C28FA0E41006AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24KB875A7B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tl.jake.Trieste-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Trieste Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C15137F928FA0E3E006AC127 /* Build configuration list for PBXProject "Trieste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151384828FA0E41006AC127 /* Debug */,
+				C151384928FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151384A28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151384B28FA0E41006AC127 /* Debug */,
+				C151384C28FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151384E28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151384F28FA0E41006AC127 /* Debug */,
+				C151385028FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151385128FA0E41006AC127 /* Build configuration list for PBXNativeTarget "TriesteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151385228FA0E41006AC127 /* Debug */,
+				C151385328FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151385428FA0E41006AC127 /* Build configuration list for PBXNativeTarget "TriesteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151385528FA0E41006AC127 /* Debug */,
+				C151385628FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151385728FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151385828FA0E41006AC127 /* Debug */,
+				C151385928FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C151385A28FA0E41006AC127 /* Build configuration list for PBXNativeTarget "Trieste Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C151385B28FA0E41006AC127 /* Debug */,
+				C151385C28FA0E41006AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C15137F628FA0E3E006AC127 /* Project object */;
+}
