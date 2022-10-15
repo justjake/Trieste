@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreMotion
+import HealthKit
 
 // States:
 // Surface/Idle
@@ -27,7 +28,7 @@ struct DiveView: View {
     @State var maxDepth: Measurement<UnitLength> = Measurement(value: 0, unit: .feet)
     
     @State var viewingPreviousDive: Bool = false
-    
+    @State var diveWorkout: DiveWorkout? = nil
     
     init(submersionEvent: SubmersionEvent? = nil, depth: SubmersionMeasurement? = nil, temperature: WaterTemperature? = nil, error: Error? = nil, maxDepth: Measurement<UnitLength>? = Measurement(value: 0, unit: .feet)) {
         self.submersionEvent = submersionEvent
@@ -39,7 +40,6 @@ struct DiveView: View {
         }
         
         self.diveCoordinator.setParent(to: self)
-        self.diveCoordinator.startWorkout()
     }
     
     var body: some View {
@@ -48,9 +48,13 @@ struct DiveView: View {
             VStack {
                 Image(systemName: "water.waves.and.arrow.down").foregroundColor(.accentColor).imageScale(.large)
                 Text("To start a dive, submerge Apple Watch").multilineTextAlignment(.center).padding(15)
-                Button("Dive") {
-                    let interface = WKInterfaceDevice.current()
-                    interface.enableWaterLock()
+                if (diveWorkout == nil) {
+                    Button("Dive") {
+                        self.diveCoordinator.startWorkout()
+                    }
+
+                } else {
+                    endWorkoutButton
                 }
                 if case .complete(let dive, _) = state {
                     Button("View previous dive", action: { () -> Void in
@@ -66,12 +70,51 @@ struct DiveView: View {
                     }
                 }
             }
-        case .submerged:
+        case .submerged(let dive):
             VStack {
-                
+                Text("Submerged at: " + formatter().string(from: dive.startedAt))
+                self.endWorkoutButton
             }
             
             
+        }
+    }
+    
+    var endWorkoutButton: some View {
+        Button("End", role: .destructive) {
+            guard let dive2 = diveWorkout else {
+                print("Can't end, no dive workout")
+                return
+            }
+            
+            let session = dive2.session
+            let builder = dive2.builder
+            session.end()
+            builder.endCollection(withEnd: Date()) { (success, error) in
+                
+                guard success else {
+                    print("End collection error:", error as Any)
+                    self.error = error
+                    return
+                }
+                
+                builder.finishWorkout { (workout, error) in
+                    
+                    guard workout != nil else {
+                        // Handle errors.
+                        print("Finish workout error:", error as Any)
+                        self.error = error
+                        return
+                    }
+                    
+                    DispatchQueue.main.async() {
+                        // Update the user interface.
+                    }
+                }
+            }
+            
+            
+            self.diveWorkout = nil
         }
     }
     
@@ -79,6 +122,13 @@ struct DiveView: View {
     
     func isSubmerged() -> Bool {
         return self.submersionEvent?.state == .submerged
+    }
+    
+    func formatter() -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .full
+        return formatter
     }
 }
 
@@ -95,9 +145,13 @@ struct DiveLog {
 struct Dive {
     let startedAt: Date
     var endedAt: Date?
-    
     var depthLog: [SubmersionMeasurement] = []
     var tempretureLog: [WaterTemperature] = []
+}
+
+struct DiveWorkout {
+    var session: HKWorkoutSession
+    var builder: HKLiveWorkoutBuilder
 }
 
 // Re-implement CoreMotion events so we can create mock ones easily.

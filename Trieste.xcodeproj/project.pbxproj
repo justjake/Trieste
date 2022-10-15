@@ -106,6 +106,7 @@
 		C151386228FA1C5B006AC127 /* DiveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveCoordinator.swift; sourceTree = "<group>"; };
 		C187B3D228FA629D00E7BB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C187B3D328FA62C500E7BB99 /* Trieste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trieste.entitlements; sourceTree = "<group>"; };
+		C187B3D428FA686700E7BB99 /* Trieste Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Trieste Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +222,7 @@
 		C151382828FA0E40006AC127 /* Trieste Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C187B3D428FA686700E7BB99 /* Trieste Watch App.entitlements */,
 				C151386128FA179D006AC127 /* Trieste-Watch-App-Info.plist */,
 				C151382928FA0E40006AC127 /* TriesteApp.swift */,
 				C151382B28FA0E40006AC127 /* ContentView.swift */,
@@ -676,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Trieste Watch App/Trieste Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trieste Watch App/Preview Content\"";
@@ -684,6 +687,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Trieste-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to record health metrics like heartrate during a dive.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to record health metrics like heartrate during a dive.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Used to track metrics like depth and water tempreture during a dive.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -707,6 +713,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Trieste Watch App/Trieste Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trieste Watch App/Preview Content\"";
@@ -715,6 +722,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Trieste-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Used to record health metrics like heartrate during a dive.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Used to record health metrics like heartrate during a dive.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Used to track metrics like depth and water tempreture during a dive.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,6 +8,7 @@
 import Foundation
 import CoreMotion
 import HealthKit
+import WatchKit
 
 class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkoutBuilderDelegate {
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
@@ -33,6 +34,7 @@ class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkout
     func manager(_ manager: CMWaterSubmersionManager, didUpdate event: CMWaterSubmersionEvent) {
         let event = SubmersionEvent.fromCoreMotion(event: event)
         self.parent?.submersionEvent = event
+        print("Submersion:", event)
         
         switch (self.parent?.state, event.state) {
         case (.surface, .submerged), (.complete, .submerged):
@@ -45,6 +47,7 @@ class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkout
     }
     
     func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterSubmersionMeasurement) {
+        print("Submersion measurement", measurement)
         switch self.parent?.state {
         case .some(.submerged(var dive)):
             dive.depthLog.append(SubmersionMeasurement.fromCoreMotion(measure: measurement))
@@ -53,6 +56,7 @@ class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkout
     }
     
     func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterTemperature) {
+        print("Water tempreture:", measurement)
         switch self.parent?.state {
         case .some(.submerged(var dive)):
             dive.tempretureLog.append(WaterTemperature.fromCoreMotion(measure: measurement))
@@ -61,6 +65,7 @@ class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkout
     }
     
     func manager(_ manager: CMWaterSubmersionManager, errorOccurred error: Error) {
+        print("Submersion error:", error)
         self.parent?.error = error
     }
     
@@ -105,18 +110,13 @@ class DiveCoordinator: NSObject, CMWaterSubmersionManagerDelegate, HKLiveWorkout
                     return
                 }
                 
-                
-                
                 // Indicate that the session has started.
             }
             
-            WKDevic
-
-            
+            WKInterfaceDevice.current().enableWaterLock()
+            self.parent?.diveWorkout = DiveWorkout(session: session, builder: builder)
         } catch  {
             self.parent?.error = error
         }
-        
-        
     }
 }
