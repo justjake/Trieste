@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Used to record health metrics like heartrate during a dive.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Used to record health metrics like heartrate during a dive.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Used to track metrics like depth and water tempreture during a dive.</string>
+</dict>
+</plist>

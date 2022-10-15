@@ -22,6 +22,9 @@
 		C151383B28FA0E41006AC127 /* Trieste_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151383A28FA0E41006AC127 /* Trieste_Watch_AppTests.swift */; };
 		C151384528FA0E41006AC127 /* Trieste_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151384428FA0E41006AC127 /* Trieste_Watch_AppUITests.swift */; };
 		C151384728FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151384628FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift */; };
+		C151385E28FA156E006AC127 /* DiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151385D28FA156E006AC127 /* DiveView.swift */; };
+		C151386028FA1594006AC127 /* CannotDiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151385F28FA1594006AC127 /* CannotDiveView.swift */; };
+		C151386328FA1C5B006AC127 /* DiveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151386228FA1C5B006AC127 /* DiveCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,12 @@
 		C151384028FA0E41006AC127 /* Trieste Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trieste Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C151384428FA0E41006AC127 /* Trieste_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trieste_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		C151384628FA0E41006AC127 /* Trieste_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trieste_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C151385D28FA156E006AC127 /* DiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveView.swift; sourceTree = "<group>"; };
+		C151385F28FA1594006AC127 /* CannotDiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannotDiveView.swift; sourceTree = "<group>"; };
+		C151386128FA179D006AC127 /* Trieste-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Trieste-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C151386228FA1C5B006AC127 /* DiveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveCoordinator.swift; sourceTree = "<group>"; };
+		C187B3D228FA629D00E7BB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C187B3D328FA62C500E7BB99 /* Trieste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trieste.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +183,8 @@
 		C151380028FA0E3F006AC127 /* Trieste */ = {
 			isa = PBXGroup;
 			children = (
+				C187B3D328FA62C500E7BB99 /* Trieste.entitlements */,
+				C187B3D228FA629D00E7BB99 /* Info.plist */,
 				C151380128FA0E3F006AC127 /* TriesteApp.swift */,
 				C151380328FA0E3F006AC127 /* ContentView.swift */,
 				C151380528FA0E40006AC127 /* Assets.xcassets */,
@@ -210,8 +221,12 @@
 		C151382828FA0E40006AC127 /* Trieste Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C151386128FA179D006AC127 /* Trieste-Watch-App-Info.plist */,
 				C151382928FA0E40006AC127 /* TriesteApp.swift */,
 				C151382B28FA0E40006AC127 /* ContentView.swift */,
+				C151385F28FA1594006AC127 /* CannotDiveView.swift */,
+				C151385D28FA156E006AC127 /* DiveView.swift */,
+				C151386228FA1C5B006AC127 /* DiveCoordinator.swift */,
 				C151382D28FA0E41006AC127 /* Assets.xcassets */,
 				C151382F28FA0E41006AC127 /* Preview Content */,
 			);
@@ -491,7 +506,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C151385E28FA156E006AC127 /* DiveView.swift in Sources */,
+				C151386028FA1594006AC127 /* CannotDiveView.swift in Sources */,
 				C151382C28FA0E40006AC127 /* ContentView.swift in Sources */,
+				C151386328FA1C5B006AC127 /* DiveCoordinator.swift in Sources */,
 				C151382A28FA0E40006AC127 /* TriesteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +682,7 @@
 				DEVELOPMENT_TEAM = 24KB875A7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trieste-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
@@ -694,6 +713,7 @@
 				DEVELOPMENT_TEAM = 24KB875A7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trieste-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = tl.jake.Trieste;
@@ -720,12 +740,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trieste/Trieste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trieste/Preview Content\"";
 				DEVELOPMENT_TEAM = 24KB875A7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trieste/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -753,12 +775,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trieste/Trieste.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trieste/Preview Content\"";
 				DEVELOPMENT_TEAM = 24KB875A7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trieste/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Trieste;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

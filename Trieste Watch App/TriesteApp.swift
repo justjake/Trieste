@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+ @main
 struct Trieste_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
